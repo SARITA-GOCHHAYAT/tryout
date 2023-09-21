@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <title>Web20-C4</title>
+    <style>
+      body{
+        background:radial-gradient(yellow,green) ;
+      }
+      #navbar{
+        text-align: center;
+      }
+      #navbar h2{
+        font-size: 3rem;
+        color: white;
+      }
+      h3{
+        color: white;
+      }
+      div a{
+        text-decoration: none;
+      }
+      div a h3:hover{
+        color:rgb(87, 4, 87);
+      }
+      #navbar>div{
+        display: flex;
+        justify-content: space-around;
+      }
+      #create h1{
+        text-align: center;
+        font-size:2rem;
+        color: aliceblue;
+      }
+      form{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: 300px;
+        width: 30%;
+        border: 1px solid black;
+        color: white;
+        padding-top: 2%;
+        padding-left: 3%;
+        background: linear-gradient(purple,rgb(214, 22, 214),rgb(225, 158, 225));
+     border-radius: 15px;
+      }
+form input{
+    margin-top: 2%;
+    margin-bottom: 4%;
+    width: 60%;
+    height: 30px;
+    border-radius: 15px;
+    padding:2px 0px 2px 5px;
+border: 1px solid black;
+  }
+form select{
+  width: 60%;
+}
+th,td{
+  padding: 10px 5px 5px 10px;
+}
+table{
+  margin-left: 20%;
+}
+table tr{
+  cursor: pointer;
+}
+
+tr:hover{
+  transition: all .2s ease-in;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <h2>Masai Task List</h2>
+      <div>
+        <a href="./index.html">
+          <h3>Home</h3>
+        </a>
+        <a href="./dashboard.html">
+          <h3>Dashboard</h3>
+        </a>
+        <a href="./Done.html">
+          <h3>Done</h3>
+        </a>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Start Date</th>
+          <th>Priority</th>
+        </tr>
+      </thead>
+      <tbody>
+       <!-- Update the rows here using jsvascript -->
+      </tbody>
+    </table>
+  </body>
+  <script src="./done.js"></script>
+</html>
